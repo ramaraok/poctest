@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: ramaraok
+    provider: github
+    repository: samplegradle
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: ramaraok-samplegradle
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/ramaraok/samplegradle.git
+  org: ramaraok
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: samplegradle
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/ramaraok/samplegradle

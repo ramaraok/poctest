@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         ramaraok/poctest: true
+        ramaraok/samplegradle: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -20,6 +21,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         ramaraok/poctest: merge
+        ramaraok/samplegradle: merge
       queries:
       - labels:
         - approved
@@ -31,6 +33,7 @@ data:
         - needs-rebase
         repos:
         - ramaraok/poctest
+        - ramaraok/samplegradle
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +44,7 @@ data:
         - needs-rebase
         repos:
         - ramaraok/poctest
+        - ramaraok/samplegradle
       target_url: http://lighthouse-jx./merge/status
 kind: ConfigMap
 metadata:
