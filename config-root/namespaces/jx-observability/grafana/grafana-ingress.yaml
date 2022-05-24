@@ -15,7 +15,7 @@ metadata:
     meta.helm.sh/release-name: 'grafana'
 spec:
   rules:
-    - host: grafana-jx-observability.change.me
+    - host: grafana-jx-observability.192.168.5.15.nip.io
       http:
         paths:
           - path: /
